@@ -1,0 +1,33 @@
+Description: rlazoryshchak week0 homework
+
+Parameters:
+  InstanceType:
+    Description: EC2 Instance
+    Type: String
+    Default: t2.micro
+
+  ImageId:
+    Description: EC2 Instance
+    Type: String
+    Default: ami-0c2d06d50ce30b442
+    AllowedValues:
+      - ami-0c2d06d50ce30b442
+      - ami-0b28dfc7adc325ef4
+      - ami-03d5c68bab01f3496
+
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: aws-ssh-key
+      ImageId: !Ref ImageId
+      InstanceType: 
+        Ref: InstanceType
+
+Outputs:
+  PublicIp:
+    Description: EC2 public IP
+    Value: !GetAtt EC2Instance.PublicIp
+  InstanceID:
+    Description: The Instance ID
+    Value: !Ref EC2Instance
