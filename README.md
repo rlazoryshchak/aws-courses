@@ -15,3 +15,10 @@ aws cloudformation create-stack \\
 --template-body file://week1/rlazoryshchak-asg.yml \\
 --parameters '[{"ParameterKey":"InstanceType","ParameterValue":"t2.micro"}]'
 ```
+
+### Week 2
+```
+sh init-s3.sh
+terraform init
+terraform apply
+```
