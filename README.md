@@ -29,3 +29,9 @@ sh init.sh
 terraform init
 terraform apply
 ```
+
+### Week 4
+```
+terraform init
+terraform apply
+```
