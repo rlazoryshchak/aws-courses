@@ -22,3 +22,10 @@ sh init-s3.sh
 terraform init
 terraform apply
 ```
+
+### Week 3
+```
+sh init.sh
+terraform init
+terraform apply
+```
