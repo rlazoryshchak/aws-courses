@@ -35,3 +35,9 @@ terraform apply
 terraform init
 terraform apply
 ```
+
+### Week 5
+```
+terraform init
+terraform apply
+```
